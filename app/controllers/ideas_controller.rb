@@ -16,7 +16,7 @@ class IdeasController < ApplicationController
   private
 
   def idea_params
-    params.require(:idea).permit(:idea, :description)
+    params.require(:idea).permit(:name, :description)
   end
 
   def info

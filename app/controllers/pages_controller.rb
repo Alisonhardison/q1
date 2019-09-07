@@ -2,12 +2,12 @@ class PagesController < ApplicationController
 
   def index
     @pages = Page.all
-    @ideas = Idea.all
+    
   end
 
   def new
     @page = Page.new
-    @idea = Idea.new
+    
   end
 
   def create
