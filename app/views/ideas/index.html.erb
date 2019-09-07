@@ -1,0 +1,26 @@
+<div class="booyah-box col-10 offset-1">
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    
+      <div class="col-10 offset-1 text-center">
+        <p class="about">
+            Everday one small idea transforms the world as we know it. Whether it be self driving trucks, floating farms, or brainwave passwords the common thread is technology. Our ideas have the power to change the world around us. We live in a time where if we can dream it we can acheive it. So what are you dreaming about? What would you like to see become reality for the younger generation? Submit your ideas here! 
+        </p>
+      </div>
+  </div>
+      
+      <% @ideas.each do |idea| %>
+        <div class="booyah-box col-10 offset-1">
+          <h1><%= idea.name %></h1>
+          <p><%= idea.description %></p><br />
+        </div>
+      <% end %>

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'pages#index'
+  root 'ideas#index'
   resources :pages
   resources :ideas
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
