@@ -1,15 +1,5 @@
 <div class="idea">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+    
     
       <div class="col-10 offset-1 text-center">
         <p class="about">
@@ -20,7 +10,7 @@
       
       <% @ideas.each do |idea| %>
         <div class="booyah-box col-10 offset-1 text-center">
-          <h1><%= idea.name %></h1>
+          <h1><%=idea.name %></h1>
           <p><%= idea.description %></p><br />
         </div>
       <% end %>

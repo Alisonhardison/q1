@@ -19,6 +19,10 @@ class IdeasController < ApplicationController
     params.require(:idea).permit(:name, :description)
   end
 
+  def show
+    @idea = Idea.find(params[:id])
+  end
+
   def info
     redirect_to new_page  
   end
