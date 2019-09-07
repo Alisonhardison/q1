@@ -1,7 +1,7 @@
 <div class="booyah-box col-10 offset-1">
     <h1>Enter Your Idea Details</h1>
-    <%= simple_form_for @page do |f| %>
-      <%= f.input :idea %>
+    <%= simple_form_for @pages do |f| %>
+      <%= f.input :name %>
       <%= f.input :description %>
       <br />
       <%= f.submit 'Create', class: 'btn btn-primary' %>
