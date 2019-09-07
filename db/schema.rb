@@ -23,9 +23,8 @@ ActiveRecord::Schema.define(version: 2019_09_07_154520) do
   end
 
   create_table "pages", force: :cascade do |t|
-    t.string "name"
-    t.string "about"
-    t.string "contact"
+    t.string "idea"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
